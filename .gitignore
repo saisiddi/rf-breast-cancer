@@ -1,0 +1,23 @@
+# virtualenv
+.venv/
+venv/
+env/
+
+# python bytecode
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# streamlit
+.streamlit/secrets.toml
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Note: model.pkl, metrics.json, confusion_matrix.png and roc_curve.png ARE
+# committed on purpose. They are the reproducible artifacts the README documents,
+# and committing them lets a fresh clone load a pre-trained model immediately.
+# They regenerate exactly via `python train.py` (random_state=42 is fixed).
